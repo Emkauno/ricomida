@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap');
+
+$color-gray: #373a3C;
+$color-gray-light:#dddddd;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-danger: #dc3545;
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+.navbar-brand {
+	font-family: "Lobster";
+	font-size: 35px;
+}
+
+.header-info {
+	height: 390px;
+	@media(max-width:992px) {
+		height: 300px;
+	}
+}
+.btn-outline-secondary {
+	border-color: $color-gray-light;
+	color: $color-black
+}
+
+.divider {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		margin-left: 0;
+		border: 0;
+		border-top: 2px solid $color-black;
+		width: 100%;
+
+		@media(max-width:768px){
+			margin: 0;
+
+		}
+
+	}
+
+.btn-mobile	{
+	height: 40pt;
+	width: 140pt;
+	padding: 13px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@media(max-width:992px){
+		font-size: 14px;
+		width: 100pt;
+		height: 35pt;
+
+	}
+	@media(max-width:768px){
+		font-size: 14px;
+		width: 100pt;
+		height: 35pt;
+
+	}
+}
+
+.mt-6 {
+	margin-top: 7rem;
+	@media(max-width: 768px){
+		margin-top: 6.5rem;
+	}
+}
+
+.card {
+	height: 100%;
+	max-height: 400px;
+	@media(max-width: 768px){
+		max-height: 450px;
+	}
+}
+.mb-6 {
+	margin-bottom: 70px;
+}
+
+.carousel-inner {
+	max-height: 100%;
+	min-width: 100%;
+}
+
+.carousel {
+	height: 170px;
+}
+
+.carousel-indicators li {
+	position: relative;
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	background-color: $color-gray-light;
+	transform: translateY(58px);
+	&.active {
+		background-color: $color-gray;
+	}
+}
+
+.slider {
+	&-1 {
+		padding: 7px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+#recetas {
+	font-family: "Cabin";
+	font-size: 20px;
+
+	@media(max-width:768px){
+	
+	}			
+
+}
+
+
+.home-border {
+	padding-top: 3rem;
+}
+
+.recetas-h1 {
+	font-size: 20px;
+}
+
+.recetas-h2 {
+	font-size: 20px;
+	@media(max-width:768px){
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 20px;
+	}
+}
+
+.recetas-p {
+	font-size: 19px;
+	@media(max-width:768px){
+		font-size: 17px;
+		line-height: 30px;
+	}
+}
+
+.pizza	{
+	&-h1{
+		width: 80%;
+		color: $color-gray;
+		line-height: 49px;
+		height: 200px;
+
+	@media(max-width: 992px) {
+		width: 100%;
+		font-size: 25px;
+		line-height: 40px;
+		
+	}
+	@media(max-width: 768px) {
+		width: 80%;
+		font-size: 32px;
+		line-height: 40px;
+		height: unset;
+		padding-bottom: 10px;
+		
+	}
+	}
+
+	&-h2 {
+		font-size: 21px;
+		
+		@media(max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.ricomida {
+	font-family: "Lobster"
+}
+
+.footer {
+	height: 540px;
+	background-color: $color-danger;
+	
+	&-btn {
+		width: 230px;
+		height: 40px;
+	}
+	&-logo {
+		height: 125px;
+	}
+}
+
+.footer-h1 {
+	@media(max-width:768px){
+		font-size: 35px;
+	}
+}
+.footer-p {
+	@media(max-width:768px){
+		margin-top: 20px;
+		font-size: 20px;
+	}
+}
+.popover-body {
+	background:$color-gray;
+	color: $color-white;
+	padding:0 20px;
+	height: 30px;
+	font-family: "Cabin";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bs-popover-auto[x-placement^=left] .arrow::after, .bs-popover-right .arrow::after {
+	left: 1px;
+    border-right-color:$color-gray;
+}
+
+.bs-popover-auto[x-placement^=bottom] .arrow::after, .bs-popover-bottom .arrow::after {
+    left: 1px;
+    border-bottom-color:$color-gray;
+}
+
+.bs-popover-auto[x-placement^=left] .arrow::after, .bs-popover-left .arrow::after {
+    left: 1px;
+    border-left-color:$color-gray;
+}
+
